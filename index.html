@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>POINT Lanches, Açaí, Picolés e Sorvetes</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;600;700;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== HERO ===== -->
+  <header class="hero">
+    <div class="hero__noise"></div>
+    <div class="blob blob--1"></div>
+    <div class="blob blob--2"></div>
+    <div class="blob blob--3"></div>
+
+    <nav class="nav">
+      <div class="nav__logo">POINT<span>.</span></div>
+      <ul class="nav__links">
+        <li><a href="#cardapio">Cardápio</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#avaliacoes">Avaliações</a></li>
+        <li><a href="#contato" class="nav__cta">Contato</a></li>
+      </ul>
+      <button class="nav__burger" aria-label="Menu" id="burger">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <div class="hero__content">
+      <p class="hero__tag">🍦 Cassilândia – MS</p>
+      <h1 class="hero__title">
+        O melhor<br />
+        <span class="hero__highlight">point</span><br />
+        da cidade!
+      </h1>
+      <p class="hero__sub">Lanches artesanais, açaí cremoso, picolés e sorvetes que conquistam todo mundo. Nota <strong>5,0 ⭐</strong> no Google!</p>
+      <div class="hero__actions">
+        <a href="tel:+5567996275428" class="btn btn--primary">📞 Ligar agora</a>
+        <a href="#cardapio" class="btn btn--ghost">Ver cardápio</a>
+      </div>
+    </div>
+
+    <div class="hero__badge">
+      <svg viewBox="0 0 120 120" class="badge__ring">
+        <path id="circlePath" d="M 60,60 m -40,0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0" fill="none"/>
+        <text font-size="11.5" fill="currentColor">
+          <textPath href="#circlePath" startOffset="0">⭐ NOTA 5,0 NO GOOGLE • 4 AVALIAÇÕES • </textPath>
+        </text>
+      </svg>
+      <div class="badge__center">🍔</div>
+    </div>
+
+    <div class="hero__scroll-hint" aria-hidden="true">↓ role para baixo</div>
+  </header>
+
+  <!-- ===== STRIP ===== -->
+  <div class="strip">
+    <div class="strip__track">
+      <span>🍔 Hambúrguer</span>
+      <span>🍦 Sorvete</span>
+      <span>🫐 Açaí</span>
+      <span>🍡 Picolé</span>
+      <span>🥤 Milk‑shake</span>
+      <span>🍟 Porções</span>
+      <span>🍔 Hambúrguer</span>
+      <span>🍦 Sorvete</span>
+      <span>🫐 Açaí</span>
+      <span>🍡 Picolé</span>
+      <span>🥤 Milk‑shake</span>
+      <span>🍟 Porções</span>
+    </div>
+  </div>
+
+  <!-- ===== CARDÁPIO ===== -->
+  <section class="section" id="cardapio">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__label">— cardápio</span>
+        <h2 class="section__title">Nossos <em>destaques</em></h2>
+      </div>
+
+      <div class="cards">
+
+        <article class="card" data-index="0">
+          <div class="card__emoji">🍔</div>
+          <div class="card__body">
+            <h3>Hambúrgueres Artesanais</h3>
+            <p>Pães macios, carnes suculentas e combinações irresistíveis. Do clássico ao especial da casa.</p>
+            <div class="card__price">A partir de <strong>R$ 20</strong></div>
+          </div>
+        </article>
+
+        <article class="card card--featured" data-index="1">
+          <div class="card__badge-top">⚡ Mais pedido</div>
+          <div class="card__emoji">🫐</div>
+          <div class="card__body">
+            <h3>Açaí Cremoso</h3>
+            <p>Açaí fresquinho com granola, frutas e complementos à sua escolha. Puro ou com leite.</p>
+            <div class="card__price">A partir de <strong>R$ 20</strong></div>
+          </div>
+        </article>
+
+        <article class="card" data-index="2">
+          <div class="card__emoji">🍡</div>
+          <div class="card__body">
+            <h3>Picolés & Sorvetes</h3>
+            <p>Variedade de sabores gelados para refrescar o dia. Perfeitos para o calor de Cassilândia!</p>
+            <div class="card__price">A partir de <strong>R$ 5</strong></div>
+          </div>
+        </article>
+
+        <article class="card" data-index="3">
+          <div class="card__emoji">🥤</div>
+          <div class="card__body">
+            <h3>Bebidas & Milk‑shakes</h3>
+            <p>Refrigerantes, sucos e milk‑shakes cremosos para acompanhar qualquer pedido.</p>
+            <div class="card__price">A partir de <strong>R$ 10</strong></div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOBRE ===== -->
+  <section class="sobre" id="sobre">
+    <div class="container sobre__grid">
+      <div class="sobre__visual">
+        <div class="sobre__big-emoji">🏪</div>
+        <div class="sobre__tag-float sobre__tag-float--a">Entrega<br/>sem contato</div>
+        <div class="sobre__tag-float sobre__tag-float--b">Refeição<br/>no local</div>
+      </div>
+      <div class="sobre__text">
+        <span class="section__label">— sobre nós</span>
+        <h2 class="section__title">Feito com <em>carinho</em> pra você</h2>
+        <p>O POINT é o lugar onde sabor, qualidade e atendimento caminham juntos. Localizado na Av. Guilherme Bezerra, 216, no bairro Primavera II, em Cassilândia – MS, somos referência em lanches, açaí, picolés e sorvetes na região.</p>
+        <p>Nossa nota <strong>5,0 ⭐</strong> no Google reflete o cuidado que colocamos em cada pedido. Venha nos visitar ou ligue para pedir!</p>
+        <ul class="sobre__list">
+          <li>📍 Av. Guilherme Bezerra, 216 – Primavera II</li>
+          <li>🕐 Abre às 11:00 – seg. a dom.</li>
+          <li>📞 (67) 99627‑5428</li>
+          <li>💳 Ticket médio: R$ 20 – R$ 40</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AVALIAÇÕES ===== -->
+  <section class="section" id="avaliacoes">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__label">— avaliações</span>
+        <h2 class="section__title">O que dizem <em>nossos clientes</em></h2>
+      </div>
+
+      <div class="reviews">
+
+        <article class="review">
+          <div class="review__stars">⭐⭐⭐⭐⭐</div>
+          <p class="review__text">"Gostei muito! Comida, serviço e ambiente todos com nota máxima. Vale muito a visita!"</p>
+          <footer class="review__footer">
+            <div class="review__avatar">E</div>
+            <div>
+              <strong>Elaine Cristina de Sousa</strong>
+              <span>há 1 ano · Google Maps</span>
+            </div>
+          </footer>
+        </article>
+
+        <article class="review review--center">
+          <div class="review__stars">⭐⭐⭐⭐⭐</div>
+          <p class="review__text">"Ótimo custo‑benefício! Saí muito satisfeita. Recomendo para toda a família."</p>
+          <footer class="review__footer">
+            <div class="review__avatar">I</div>
+            <div>
+              <strong>Ingrid Cecilia</strong>
+              <span>há 1 ano · R$ 20–40 p/ pessoa</span>
+            </div>
+          </footer>
+        </article>
+
+        <article class="review">
+          <div class="review__stars">⭐⭐⭐⭐⭐</div>
+          <p class="review__text">"Ambiente agradável, atendimento incrível e comida deliciosa. Nota 10!"</p>
+          <footer class="review__footer">
+            <div class="review__avatar">B</div>
+            <div>
+              <strong>BrM Black</strong>
+              <span>há 1 ano · R$ 20–40 p/ pessoa</span>
+            </div>
+          </footer>
+        </article>
+
+      </div>
+
+      <div class="rating-bar">
+        <div class="rating-bar__score">5,0</div>
+        <div class="rating-bar__stars">⭐⭐⭐⭐⭐</div>
+        <div class="rating-bar__count">4 avaliações no Google</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta" id="contato">
+    <div class="cta__blob"></div>
+    <div class="container cta__inner">
+      <h2 class="cta__title">Bora pro <span>POINT</span>?</h2>
+      <p class="cta__sub">Ligue agora, passe pessoalmente ou mande mensagem. Estamos esperando por você!</p>
+      <div class="cta__actions">
+        <a href="tel:+5567996275428" class="btn btn--primary btn--lg">📞 (67) 99627‑5428</a>
+        <a href="https://wa.me/5567996275428" target="_blank" rel="noopener" class="btn btn--whatsapp btn--lg">💬 WhatsApp</a>
+      </div>
+      <p class="cta__address">📍 Av. Guilherme Bezerra, 216 – Primavera II, Cassilândia – MS</p>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__logo">POINT<span>.</span></div>
+      <p>Lanches · Açaí · Picolés · Sorvetes</p>
+      <p class="footer__small">© 2025 POINT Lanches. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
